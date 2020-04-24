@@ -7,9 +7,44 @@
         <style>
             body {
                 background-color: black;
+                color: white;
             }
             header{
                 height: 100px;
+            }
+            .content .recommend-book .book-detail .title {
+                font-family: Helvetica, sans-serif;
+                font-weight: 700;
+            }
+
+            .content .recommend-book .book-detail .author-and-tags{
+                font-family: Helvetica, sans-serif;
+                font-weight: 400;
+                color: #999;
+            }
+            .content .recommend-book .book-detail .author-and-tags .dot{
+                width: 10px;
+                height: 10px;
+                background-color: #8CD77E;
+                display: inline-block;
+                border-radius: 50%;
+            }
+            .content .recommend-book .book-detail .separator{
+                height: 2px;
+                background-color: #8CD77E;
+            }
+            .btn-custom-green{
+                background-color: #8CD77E;
+                border: none;
+            }
+            .btn-custom-green:hover, .btn-custom-circle:hover{
+                background-color: rgb(120,174,135);;
+            }
+
+            .btn-custom-circle{
+                background-color: #8CD77E;
+                border: none;
+                border-radius: 50%;
             }
         </style>
     </head>
@@ -31,7 +66,68 @@
         </header>
 
         <content>
-            B
+            <!-- [START] Banner -->
+            <div class="banner d-flex">
+                <div class="intro">
+                    <img src="images/odd-read-wording.png" width="200px"/>
+                    <p>
+
+                        “Books are the quietest and most constant of friends; 
+                        they are the most accessible and wisest of counsellors, 
+                        and the most patient of teachers” by Charles William Eliot
+                    </p>
+                    <select id="genre">
+                        <option selected disabled>Genre</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Science Fiction">Science Fiction</option>
+
+                      </select>
+
+                </div>
+                <div class="wormbook-image">
+                    <img src="images/wormbook.png" />
+                </div>
+            </div>
+            <!-- [END] Banner -->
+            <div class="content d-flex flex-column align-items-center">
+                <div class="recommend-book d-flex col-10">
+                    <!-- Separate image and frame -->
+                    <div class="book-cover mr-5">
+                        <img src="images/recommend-book-image.png" />
+                    </div>
+                    <div class="book-detail">
+                        <h1 class="title">Animal Farm</h1>
+                        <div class="author-and-tags d-flex">
+                            <p class="mr-4">George Orwell</p>
+                            <p><span class="dot"></span> #political #satire</p>
+                        </div>
+                        <div class="separator mb-4"></div>
+                        <div class="description">
+                            <p>
+                                หนังสือถูกแต่งโดย จอร์จ ออเวล (George Orwell,1905-1950) ที่สะท้อนคิดวัฒนธรรมการเมือง ในประเทศรัสเซีย ผ่านสถานการณ์บรรดาสัตว์ต่าง ๆ ที่ปรากฏใน Animal Farm ที่ต่อสู้ปฏิวัติกับคนที่เป็นเจ้าของฟาร์ม พร้อมนำไปสู่การปฏิวัติและพัฒนา แต่ทุกอย่างเกิดขึ้นภายใต้ "...การคอรัปชั่น เบี่ยงประเด็น พวกพ้อง ชนชั้น ผู้ปกครอง ผู้ถูกปกครอง ข่มขวัญ เสแสร้ง สร้างภาพ กดขี่ หลอกลวง ข่มขู่ หลอกใช้ เอารัดเอาเปรียบ ปั่นกระแส ปั้นเรื่อง แปลงสาร สาดโคลน ใส่ความ อุ้มฆ่า และตัดตอน ลับลวงพราง..." ซึ่งทั้งหมดเป็นเรื่องเล่าผ่านบรรดาสัตว์นานาชนิดใน Animal Farm
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a href="" class="btn btn-primary btn-custom-green">BORROW</a>
+                            <a href="" class="btn btn-primary btn-custom-green mr-4">+ LIST</a>
+                            <a href="" class="btn btn-primary btn-custom-circle">X</a>
+                            <a href="" class="btn btn-primary btn-custom-circle">X</a>
+                            <a href="" class="btn btn-primary btn-custom-circle">X</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fiction-books">
+                    <div class="books" class="d-flex">
+                        <img src="images/book1.png" />
+                        <img src="images/book2.png" />
+                        <img src="images/book3.png" />
+                        <img src="images/book4.png" />
+                        <img src="images/book5.png" />
+                </div>
+                <div class="non-fiction-books">
+                    non
+                </div>
+            </div>
         </content>
 
         <footer>
